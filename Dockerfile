@@ -33,3 +33,4 @@ WORKDIR /var/www
 RUN rm -rf /var/www/*
 RUN git clone https://github.com/drupal/recommended-project.git .
 RUN composer update
+RUN composer require 'drupal/claro:1.x-dev'
